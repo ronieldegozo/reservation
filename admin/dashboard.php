@@ -10,7 +10,7 @@ endif;
   <meta charset="utf-8">
   <!-- Title and other stuffs -->
   <title>Dashboard - <?php include('../includes/title.php');?></title>
-  <link rel="shortcut icon" href="../images/piggylogo.png" type="">
+  <link rel="shortcut icon" href="../images/logo2.png" type="">
   <?php include('../includes/links.php');?>
   
 </head>

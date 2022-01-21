@@ -9,9 +9,8 @@
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta name="author" content="">
-  <link rel="shortcut icon" href="../images/piggylogo.png" type="">
 
-
+  <link rel="shortcut icon" href="../images/logo2.png" type="">
   <!-- Stylesheets -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <!-- Font awesome icon -->

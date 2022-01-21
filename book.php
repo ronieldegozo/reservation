@@ -12,8 +12,8 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
   <link rel="shortcut icon" href="images/favicon.png" type="">
-
-  <title> Feane </title>
+  <link rel="shortcut icon" href="images/logo2.png" type="">
+  <title> Piggy Wings </title>
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />

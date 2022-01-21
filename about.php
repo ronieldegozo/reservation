@@ -11,13 +11,12 @@
   <meta name="keywords" content="" />
   <meta name="description" content="" />
   <meta name="author" content="" />
-  <link rel="shortcut icon" href="images/favicon.png" type="">
-
-  <title> Feane </title>
-
+  <link rel="shortcut icon" href="images/logo2.png" type="">
+  <title> Piggy Wings </title>
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 
+  <link rel="stylesheet" type="text/css" href="css/footer.css" />
   <!--owl slider stylesheet -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
   <!-- nice select  -->
@@ -198,7 +197,8 @@
     </div>
   </footer>
   <!-- footer section -->
-
+  <?php include 'footer.php';?>
+  <!-- footer section -->
   <!-- jQery -->
   <script src="js/jquery-3.4.1.min.js"></script>
   <!-- popper js -->
