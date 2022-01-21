@@ -10,15 +10,25 @@ endif;
 <?php include('../includes/links.php');?>
 <?php include('../includes/js.php');?>
 <style>
+
+.bg{
+  background-image: linear-gradient(90deg,rgb(16, 16, 17), rgb(61, 48, 77))
+}
+.itext{
+  color:#f3f3f3;
+}
+.loaders{
+  margin-top: 12%;
+}
 .loader {
   border: 16px solid #f3f3f3;
-  border-radius: 50%;
-  border-top: 16px solid blue;
-  border-right: 16px solid green;
+  border-radius: 80%;
+  border-top: 16px solid #3498db;
   border-bottom: 16px solid red;
-  border-left: 16px solid pink;
-  width: 120px;
-  height: 120px;
+  border-left: 16px solid  rgb(61, 48, 77);
+  
+  width: 140px;
+  height: 140px;
   -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
   margin:auto;
@@ -36,8 +46,8 @@ endif;
 }
 </style>
 </head>
-<body>
-<div style="width:100%;text-align:center;vertical-align:bottom">
+<body class="bg">
+<div style="width:100%;text-align:center;vertical-align:bottom" class="loaders">
 		<div class="loader"></div>
 <?php
 
@@ -45,7 +55,7 @@ endif;
 	
  echo '<meta http-equiv="refresh" content="2;url=index.php">';
  
- echo'<span class="itext">Logging out. Please wait!...</span>';
+ echo'<span class="itext"> Please wait!, You are now signing out....</span>';
 ?>
 </div>
 </body>

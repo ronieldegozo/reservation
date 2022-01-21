@@ -10,15 +10,15 @@ endif;
   <meta charset="utf-8">
   <!-- Title and other stuffs -->
   <title>Dashboard - <?php include('../includes/title.php');?></title>
+  <link rel="shortcut icon" href="../images/piggylogo.png" type="">
   <?php include('../includes/links.php');?>
   
 </head>
-
-<body>
+<body >
 
 <div class="navbar navbar-fixed-top bs-docs-nav" role="banner">
   
-    <div class="conjtainer">
+    <div class="container" >
       <!-- Menu button for smallar screens -->
       <div class="navbar-header">
       <button class="navbar-toggle btn-navbar" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
@@ -42,14 +42,13 @@ endif;
 
     <!-- Sidebar -->
     <?php include('../includes/sidebar.php');?>
-
     <!-- Sidebar ends -->
 
         <!-- Main bar -->
-    <div class="mainbar">
+    <div class="mainbar" >
       
       <!-- Page heading -->
-      <div class="page-head">
+      <div class="page-head" >
         <h2 class="pull-left"><i class="fa fa-home"></i> Dashboard</h2>
 
         <!-- Breadcrumb -->
@@ -71,9 +70,9 @@ endif;
 
        <!-- Matter -->
 
-      <div class="matter">
-        <div class="container">
-          <div class="row">
+      <div class="matter" >
+        <div class="container" >
+          <div class="row" >
 <?php
 include('../includes/dbcon.php');
     $today=date('Y-m-d');
@@ -81,10 +80,11 @@ include('../includes/dbcon.php');
       $row=mysqli_fetch_array($query);
         $count=$row['count'];
 ?>             
-                      <div class="col-md-4">
+                      <div class="col-md-4" >
                         <div class="alert alert-info">
-                          <i class="fa fa-thumbs-o-up pull-left" style="font-size:65px"></i><h2> <?php echo $count;?> </h2>
-                          <p>Approved</p>
+            
+                          <i class="fa fa-check pull-left" style="font-size:65px"></i><h2> <?php echo $count;?> </h2>
+                          <p>Approved Customer</p>
                         </div>
                       </div>
 <?php
@@ -94,6 +94,7 @@ include('../includes/dbcon.php');
 ?> 
                       <div class="col-md-4">
                         <div class="alert alert-warning">
+                  
                           <i class="fa fa-spinner pull-left" style="font-size:65px"></i><h2 class=""><?php echo $count;?></h2>
                           <p>Pending</p>                        
                         </div>
@@ -112,8 +113,9 @@ include('../includes/dbcon.php');
 
                     
           </div>  <!--row-->
-
+  
         </div>
+        
       </div>
 
     <!-- Matter ends -->
@@ -122,15 +124,11 @@ include('../includes/dbcon.php');
     </div>
 
    <!-- Mainbar ends -->
-   <div class="clearfix"></div>
+   <div class="clearfix" ></div>
 
 </div>
 <!-- Content ends -->
 
-<!-- Footer starts -->
-<?php include('../includes/footer.php');?>  
-
-<!-- Footer ends -->
 
 <!-- Scroll to top -->
 <span class="totop"><a href="#"><i class="fa fa-chevron-up"></i></a></span> 
@@ -148,6 +146,7 @@ include('../includes/dbcon.php');
     ?>
 <!-- JS -->
 <?php include('../includes/js.php');?>  
+
 
 </body>
 </html>
