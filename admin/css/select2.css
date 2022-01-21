@@ -429,3 +429,8 @@
   padding: 6px; }
 .select2-container--classic.select2-container--open .select2-dropdown {
   border-color: #5897fb; }
+
+  .admin{
+    background-image: linear-gradient(90deg,rgb(27, 48, 233), rgb(31, 97, 238));
+ 
+  }
