@@ -22,7 +22,15 @@ include('includes/dbcon.php');
 		$i++;
 	}
 		mysqli_query($con,"INSERT INTO reservation(r_code,r_last,r_first,r_address,r_contact,r_email,r_eventname,r_date,r_time) 
-			VALUES('$code','$last','$first','$address','$contact','$email','$r_eventname','$date',$time')")or die(mysqli_error($con));  
+			VALUES('$code','
+					$last','
+					$first','
+					$address','
+					$contact','
+					$email','
+					$r_eventname','
+					$date','
+					$time')")or die(mysqli_error($con));  
 
 			$id=mysqli_insert_id($con);
 			$_SESSION['id']=$id;
