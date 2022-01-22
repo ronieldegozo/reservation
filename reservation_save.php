@@ -7,8 +7,10 @@ include('includes/dbcon.php');
 	$address = $_POST['address'];
 	$contact = $_POST['contact'];
 	$email = $_POST['email'];
-	$date = date("Y-m-d");
-
+	$r_eventname = $_POST['r_eventname'];
+	$date = $_POST['date'];
+	$time = $_POST['time'];
+	
 	$string="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 	$code="";
 	$limit=10;
@@ -19,9 +21,8 @@ include('includes/dbcon.php');
 		$code.=$string[$rand];
 		$i++;
 	}
-
-		mysqli_query($con,"INSERT INTO reservation(r_code,r_last,r_first,r_address,r_contact,r_email,date_reserved) 
-			VALUES('$code','$last','$first','$address','$contact','$email','$date')")or die(mysqli_error($con));  
+		mysqli_query($con,"INSERT INTO reservation(r_code,r_last,r_first,r_address,r_contact,r_email,r_eventname,r_date,r_time) 
+			VALUES('$code','$last','$first','$address','$contact','$email','$r_eventname','$date',$time')")or die(mysqli_error($con));  
 
 			$id=mysqli_insert_id($con);
 			$_SESSION['id']=$id;
