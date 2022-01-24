@@ -65,6 +65,9 @@
               <li class="nav-item">
                 <a class="nav-link" href="#services">Services</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
             </ul>
             <div class="user_option">
               <a href="./admin/index.php" class="user_link">
@@ -204,6 +207,9 @@
 
   <!-- services -->
   <?php include 'services.php';?>
+
+  <!-- contact -->
+  <?php include 'contact.php';?>
 
   <!-- footer section -->
   <?php include 'footer.php';?>

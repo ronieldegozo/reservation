@@ -1,36 +1,5 @@
 <footer class="footer-section">
         <div class="container">
-            <div class="footer-cta pt-5 pb-5">
-                <div class="row">
-                    <div class="col-xl-4 col-md-4 mb-30">
-                        <div class="single-cta">
-                            <i class="fa fa-map-marker"></i>
-                            <div class="cta-text">
-                                <h4>Find us</h4>
-                                <span>1977 Commonwealth Avenue Brgy Holy Spirit</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-md-4 mb-30">
-                        <div class="single-cta">
-                            <i class="fa fa-phone"></i>
-                            <div class="cta-text">
-                                <h4>Call us</h4>
-                                <span>0966 493 8055</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-md-4 mb-30">
-                        <div class="single-cta">
-                            <i class="fa fa-envelope-open"></i>
-                            <div class="cta-text">
-                                <h4>Mail us</h4>
-                                <span>piggywings.ph@gmail.com</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div class="footer-content pt-5 pb-5">
                 <div class="row">
                     <div class="col-xl-4 col-lg-4 mb-50">
@@ -59,7 +28,7 @@
                                 <li><a href="#home">Home</a></li>
                                 <li><a href="#about">About</a></li>
                                 <li><a href="#services">Services</a></li>
-                                <li><a href="#">Contact</a></li>
+                                <li><a href="#contact">Contact</a></li>
                             </ul>
                         </div>
                     </div>
@@ -93,11 +62,11 @@
                     <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
                         <div class="footer-menu">
                             <ul>
-                                <li><a href="#">Home</a></li>
+                                <li><a href="#home">Home</a></li>
                                 <li><a href="#">Terms</a></li>
                                 <li><a href="#">Privacy</a></li>
                                 <li><a href="#">Policy</a></li>
-                                <li><a href="#">Contact</a></li>
+                                <li><a href="#contact">Contact</a></li>
                             </ul>
                         </div>
                     </div>
