@@ -100,7 +100,7 @@
                       Unlimited Korean Barbeque!
                     </h1>
                     <p>
-                      Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus libero ipsam.
+                    Food is the ultimate pacifier. I feel like I can forgive anyone after a scrumptious meal.
                     </p>
                     <div class="btn-box">
                       <a href="" class="btn1">
@@ -121,7 +121,7 @@
                       Unli Wings!
                     </h1>
                     <p>
-                      Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam quisquam esse error unde. Tempora ex doloremque, labore, sunt repellat dolore, iste magni quos nihil ducimus libero ipsam.
+                    The good news is, if you go there the soonest, you might be able to enjoy their unlimited wings promo. Don't you just love limitless number of servings that comes with an affordable price? 
                     </p>
                     <div class="btn-box">
                       <a href="" class="btn1">
@@ -187,12 +187,10 @@
               </h2>
             </div>
             <p>
-              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
-              in some form, by injected humour, or randomised words which don't look even slightly believable. If you
-              are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in
-              the middle of text. All
+            At Piggy Wings, every aspect counts. From the quality of Pork, Chicken, and Beef, to the above standard marketing plans, we take everything seriously with enthusiasm and rigor.
+We believe that every member of the family deserves crispy, tender, and flavorful chicken wing and juicy Samgyusal
             </p>
-            <a href="">
+            <a href="https://www.facebook.com/PiggyWings.ph">
               Read More
             </a>
           </div>
