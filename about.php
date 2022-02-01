@@ -16,19 +16,28 @@
             <div class="icon-box">
               <div class="icon"><i class="bx bx-fingerprint"></i></div>
               <h4 class="title"><a href="">Unli Wings</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+              <p class="description">
+              A popular wing chain with branches all across the Metro, Piggy wings will have you falling in 
+              love at first bite!,   For only P299 in just 1 hour per person With over 10 incredible sauces and wings made fresh daily.
+              </p>
             </div>
 
             <div class="icon-box">
               <div class="icon"><i class='bx bxs-bowl-hot'></i></div>
               <h4 class="title"><a href="">Unli Samyupsal</a></h4>
-              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+              <p class="description">
+              Is one of the pioneers of affordable samgyupsal.
+               For only P299 in just 1 hour per person, you get to enjoy 5 types of pork and 6 types of beef slices.
+              </p>
             </div>
 
             <div class="icon-box">
               <div class="icon"><i class="bx bx-map"></i></div>
               <h4 class="title"><a href="">Event Place</a></h4>
-              <p class="description">Explicabo est voluptatum asperiores consequatur magnam. Et veritatis odit. Sunt aut deserunt minus aut eligendi omnis</p>
+              <p class="description">
+              The Piggy Wings is ready to accommodate special events for 20 to 50 pax.
+We are ensuring our guests’ safety through our standard entry procedure and health protocols.
+              </p>
             </div>
 
           </div>

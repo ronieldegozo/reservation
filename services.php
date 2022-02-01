@@ -4,55 +4,59 @@
 
         <div class="section-title">
           <h2>Services</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <p>
+          This online reservation management system for Piggy Wings Korean Restaurant is a computer-based system that enhances the productivity of the services in terms of reservation and adds for other information. The system is internet based and is intended for administrators, employees, and customers. Administrators and employees can view the reservation and transactions while customers can view the available schedules for reservations.
+          </p>
         </div>
 
         <div class="row">
           <div class="col-lg-4 col-md-6">
             <div class="icon-box">
               <div class="icon"><i class="bi bi-cash-stack" style="color: #ff689b;"></i></div>
-              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+              <h4 class="title"><a href="">Customer Satisfaction</a></h4>
+              <p class="description">
+                A system that allows the customers to give feedback online for the said reservation.
+              </p>
             </div>
           </div>
           <div class="col-lg-4 col-md-6">
             <div class="icon-box">
               <div class="icon"><i class="bi bi-calendar4-week" style="color: #e9bf06;"></i></div>
-              <h4 class="title"><a href="">Dolor Sitema</a></h4>
-              <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+              <h4 class="title"><a href="">Customer Transaction</a></h4>
+              <p class="description">
+                System that manage all the records of transactions with the customers.
+              </p>
             </div>
           </div>
-
           <div class="col-lg-4 col-md-6" data-wow-delay="0.1s">
             <div class="icon-box">
               <div class="icon"><i class="bi bi-chat-text" style="color: #3fcdc7;"></i></div>
-              <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6" data-wow-delay="0.1s">
-            <div class="icon-box">
-              <div class="icon"><i class="bi bi-credit-card-2-front" style="color:#41cf2e;"></i></div>
-              <h4 class="title"><a href="">Magni Dolores</a></h4>
-              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6" data-wow-delay="0.2s">
-            <div class="icon-box">
-              <div class="icon"><i class="bi bi-globe" style="color: #d6ff22;"></i></div>
-              <h4 class="title"><a href="">Nemo Enim</a></h4>
-              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6" data-wow-delay="0.2s">
-            <div class="icon-box">
-              <div class="icon"><i class="bi bi-clock" style="color: #4680ff;"></i></div>
-              <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
-              <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+              <h4 class="title"><a href="">Managing Custoemr Reservation</a></h4>
+              <p class="description">To make the management be able to manage the reservations of the customers.</p>
             </div>
           </div>
         </div>
 
+        <div class="row">
+        <div class="col-lg-6 col-md-6" data-wow-delay="0.1s">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-credit-card-2-front" style="color:#41cf2e;"></i></div>
+              <h4 class="title"><a href="">Customer Communication</a></h4>
+              <p class="description">
+                To allow the customers and management to contact each other online.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6" data-wow-delay="0.2s">
+            <div class="icon-box">
+              <div class="icon"><i class="bi bi-globe" style="color: #d6ff22;"></i></div>
+              <h4 class="title"><a href="">Managing Customer Information</a></h4>
+              <p class="description">
+                  Allowing the management to keep data and information organized accessible to the administrator.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </section><!-- End Services Section -->
