@@ -36,7 +36,7 @@
 					<div class="col mt-5 ">
 						<div class="booking-form">
 							<form action="reservation_save.php" method="POST">
-								<label for="Title"><h1 style="text-align: center;">Reserve Table</h1></label>
+								<a href="./index.php"><h1 style="text-align: center;">Reserve Table</h1></a>
 								<div class="row">
 									<div class="col-md-6">
 										<div class="form-group">

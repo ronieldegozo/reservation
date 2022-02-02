@@ -5,7 +5,7 @@
         <div class="section-title">
           <h2>Services</h2>
           <p>
-          This online reservation management system for Piggy Wings Korean Restaurant is a computer-based system that enhances the productivity of the services in terms of reservation and adds for other information. The system is internet based and is intended for administrators, employees, and customers. Administrators and employees can view the reservation and transactions while customers can view the available schedules for reservations.
+          Unlimited Korean Samgyeop-sal and Unlimited Chicken Wings! At Piggy Wings, every aspect counts. From the quality of Pork, Chicken, and Beef, to the above standard marketing plans, we take everything seriously with enthusiasm and rigor. We believe that every member of the family deserves crispy, tender, and flavorful chicken wing and juicy Samgyusal.
           </p>
         </div>
 
