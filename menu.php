@@ -1,5 +1,4 @@
-  <!-- food section -->
-  <section class="food_section layout_padding-bottom" id="menu">
+<section class="food_section layout_padding-bottom">
     <div class="container">
       <div class="heading_container heading_center">
         <h2>
@@ -708,4 +707,4 @@
       </div>
     </div>
   </section>
-  <!-- end food section -->
+

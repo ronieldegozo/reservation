@@ -228,11 +228,12 @@ We believe that every member of the family deserves crispy, tender, and flavorfu
 
 <!-- End of LiveChat code -->
 
+<script src="./js/custom.js"></script>
+<script src="./js/jquery-3.4.1.min.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/glightbox@3.1.0/dist/js/glightbox.min.js"></script>
   <script src="./js/about.js"></script>
   <!-- jQery -->
-  <script src="js/jquery-3.4.1.min.js"></script>
   <!-- popper js -->
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
   </script>
