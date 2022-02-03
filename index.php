@@ -30,6 +30,19 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+  <style>
+    
+@font-face {
+  font-family: myFirstFont;
+  src: url('./css/fonts/Daniel Davis.ttf');
+}
+
+.piggy{
+  font-family: myFirstFont;
+  color: red;
+}
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+  </style>
 </head>
 
 <body>
@@ -43,7 +56,7 @@
       <div class="container">
         <nav class="navbar navbar-expand-lg custom_nav-container">
           <a class="navbar-brand" href="#index">
-            <span>
+            <span class="piggy" style="font-family: 'Yellowtail', cursive;">
             Piggy Wings
             </span>
           </a>

@@ -62,7 +62,7 @@
               <div class="form-group mt-3">
                 <textarea class="form-control" id="body" name="body" rows="5" placeholder="Message" required></textarea>
               </div>
-              <div class="text-center"><button onclick="sendEmail()" value="Send an Email">Send Message</button></div>
+              <div class="text-center"><button class="btn btn-success" onclick="sendEmail()" value="Send an Email">Send Message</button></div>
             </form>
 
           </div>

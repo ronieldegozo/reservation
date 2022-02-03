@@ -152,11 +152,18 @@ a:focus {
 .navbar-brand {
   font-family: 'Dancing Script', cursive;
 }
+@font-face {
+  font-family: myFirstFonts;
+  src: url('/font/Yellowtail-Regular.ttf');
+}
+
 
 .navbar-brand span {
+  font-family: myFirstFonts;
   font-weight: bold;
+  letter-spacing: 10px;
   font-size: 32px;
-  color: #ffffff;
+  color: rgb(230, 226, 9);
 }
 
 .custom_nav-container {
@@ -1007,3 +1014,14 @@ a:focus {
   color: inherit;
 }
 /*# sourceMappingURL=style.css.map */
+
+@font-face {
+  font-family: myFirstFont;
+  src: url('./font/Daniel\ Davis.ttf');
+}
+
+
+.piggy{
+  font-family: myFirstFont;
+  color: red;
+}

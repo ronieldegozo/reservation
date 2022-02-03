@@ -433,10 +433,12 @@ text-decoration:none;
 }
 
 .navbar-brand{
+	
    color:#777;
    font-size:23px;
    font-weight:bold;
    padding-top:20px;
+
 }
 
 .navbar-brand:hover{
