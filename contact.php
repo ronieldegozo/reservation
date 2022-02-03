@@ -2,6 +2,8 @@
     <section id="contact" class="contact">
       <div class="container">
 
+      <h2 class="sent-notification"></h2>
+
         <div class="section-title">
           <h2>Contact</h2>
           <p>
@@ -45,7 +47,7 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0">
 
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form id="myForm" class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -58,14 +60,9 @@
                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                <textarea class="form-control" id="body" name="body" rows="5" placeholder="Message" required></textarea>
               </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="text-center"><button onclick="sendEmail()" value="Send an Email">Send Message</button></div>
             </form>
 
           </div>
@@ -74,3 +71,42 @@
 
       </div>
     </section><!-- End Contact Section -->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <script type="text/javascript">
+      function sendEmail(){
+        var name = $("#name");
+        var email = $("#email");
+        var subject = $("#subject");
+        var body = $("#body");
+
+        if(isNotEmpty(name) && isNotEmpty(email) && isNotEmpty(subject) && isNotEmpty(body)){
+          $.ajax({
+            url: 'sendEmail.php',
+            method: 'POST',
+            dataType: 'json',
+            data:{
+              name: name.val(),
+              email: email.val(),
+              subject: subject.val(),
+              body: body.val()
+            },
+            success: function(response){
+              $('#myForm')[0].reset();
+              $('.sent-notification').text("Message has been sent successfully!");
+
+            }    
+          });
+        }
+      }
+      function isNotEmpty(caller){
+        if(caller.val() ==""){
+          caller.css('border','1px solid red');
+          return false;
+        }else{
+          caller.css('border','');
+          return true;
+        }
+      }
+    </script>
