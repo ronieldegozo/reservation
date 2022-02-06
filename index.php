@@ -83,7 +83,7 @@
               </li>
             </ul>
             <div class="user_option">
-              <a href="./admin/index.php" class="user_link">
+              <a href="./administrator/index.php" class="user_link">
                 <i class="fa fa-user" aria-hidden="true"></i>
               </a>
               <!-- <form class="form-inline">
