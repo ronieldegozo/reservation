@@ -66,7 +66,8 @@
                       </button>
                     </div>
                     <div class="modal-body">
-                      <form action="">
+
+                      <form action="menu_save.php" method="POST"  enctype="multipart/form-data">
                         <div class="form-group">
                           <label for="productname">Product Name</label>
                           <input type="text" name="pname" required class="form-control">
@@ -81,7 +82,7 @@
                         </div>
                         <div class="form-group">
                           <label for="productprice">Product Image</label>
-                          <input type="file" name="pimg" required class="form-control">
+                          <input type="file" name="file" required class="form-control">
                         </div>
                     </div>
                     <div class="modal-footer">
