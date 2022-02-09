@@ -87,7 +87,7 @@
                     </div>
                     <div class="modal-footer">
                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                      <button type="submit" class="btn btn-primary">Save changes</button>
+                      <button type="submit"   name="create" class="btn btn-primary">Save changes</button>
                     </div>
                     </form>
                   </div>
@@ -96,51 +96,189 @@
 
             </ol>
 
+            <div class="table-responsive">
             <table class="table">
-  <thead class="thead-dark">
+   
+<thead class="thead-dark">
     <tr>
       <th scope="col">ID</th>
+      <th scope="col">PRODUCT IMAGE</th>
       <th scope="col">PRODUCT NAME</th>
       <th scope="col">PRODUCT PRICE</th>
       <th scope="col">PRODUCT DESCRIPTION</th>
-      <th scope="col">PRODUCT PRICE</th>
       <th scope="col">Edit</th>
       <th scope="col">Delete</th>
     </tr>
   </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-      <td>Otto</td>
-      <td><i class="fas fa-edit"></i></td>
-      <td><i class="fas fa-trash"></i></td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-      <td>Otto</td>
-      <td><i class="fas fa-edit"></i></td>
-      <td><i class="fas fa-trash"></i></td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-      <td>Otto</td>
-      <td><i class="fas fa-edit"></i></td>
-      <td><i class="fas fa-trash"></i></td>
-    </tr>
-  </tbody>
+  <?php
+include('../includes/dbcon.php');
+
+    $query=mysqli_query($con,"select * from pmenu")or die(mysqli_error($con));
+      while ($row=mysqli_fetch_array($query)){
+        $id=$row['id'];
+        $pname=$row['pname'];
+        $pprice=$row['pprice'];
+        $pdesc=$row['pdesc'];
+        $imgfile=$row['imgfile'];
+
+?>    
+      
+                      <tr>
+                      <td><?php echo $id;?></td>
+                      <td><img style="height:50px;width:50px" src="<?php echo $row['imgfile'] ?>"></td>
+                        <td><?php echo $pname;?></td>
+                        <td><?php echo $pprice;?></td>
+                        <td><?php echo $pdesc;?></td>
+                      </a>
+                        <td>
+                              <a href="#update" class="btn btn-info" data-target="#edit" data-toggle="modal">
+                                <i class="fa fa-pencil"></i>
+                              </a>
+                        </td>
+                        <td>
+                        <a href="delete.php?id=<?php $id ?>" class="btn btn-danger" >
+                                <i class="fa fa-user"></i>
+                              </a>
+                        </td>
+                      </tr>
+                      <?php }?>
 </table>
+            </div>
 
           </div>
           <!-- Row -->
+
+<!-- Modal -->
+<div class="modal fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="update<?php echo $id;?>" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+              <h4 class="modal-title">Update Category</h4>
+            </div>
+            <div class="modal-body" style="height:300px">
+              <!--start form-->
+              <form class="form-horizontal" method="post" action="menu_update.php" enctype='multipart/form-data'>
+                  <!-- Title -->
+                  <input type="hidden" name="id" value="<?php echo $id;?>">
+                  <!-- Title -->
+                  <div class="form-group">
+                      <label class="control-label col-lg-4" for="title">Menu Name</label>
+                      <div class="col-lg-8"> 
+                        <input type="text" class="form-control" name="menu" id="title" placeholder="Menu Name" value="<?php echo $menu;?>">
+                      </div>
+                  </div> 
+                  <!-- Title -->
+                  <div class="form-group">
+                      <label class="control-label col-lg-4" for="title">Category</label>
+                      <div class="col-lg-8"> 
+                        <select class="form-control select2" id="exampleSelect1" name="cat">
+                         <?php
+                            include('../includes/dbcon.php');
+
+                              $result = mysqli_query($con,"SELECT * FROM category ORDER BY cat_name"); 
+                                  while ($row = mysqli_fetch_assoc($result)){
+
+                                ?>
+                                <option value="<?php echo $row['cat_id'];?>"><?php echo $row['cat_name'];?></option>
+                        <?php } ?>
+                        </select>
+                      </div>
+                  </div> 
+                  <!-- Title -->
+                  <div class="form-group">
+                      <label class="control-label col-lg-4" for="title">Subcategory</label>
+                      <div class="col-lg-8"> 
+                        <select class="form-control select2" id="exampleSelect1" name="subcat">
+                         <?php
+                              echo "<option>$subcat</option>";
+                              $result = mysqli_query($con,"SELECT * FROM subcategory ORDER BY subcat_name"); 
+                                  while ($row = mysqli_fetch_assoc($result)){
+
+                                ?>
+                                <option><?php echo $row['subcat_name'];?></option>
+                        <?php } ?>
+                        </select>
+                      </div>
+                  </div> 
+                  <!-- Title -->
+                  <div class="form-group">
+                      <label class="control-label col-lg-4" for="title">Description</label>
+                      <div class="col-lg-8"> 
+                        <textarea class="form-control" name="desc" id="title" placeholder="Description"><?php echo $desc;?></textarea>
+                      </div>
+                  </div> 
+                  <!-- Title -->
+                  <div class="form-group">
+                      <label class="control-label col-lg-4" for="title">Price</label>
+                      <div class="col-lg-8"> 
+                        <input type="text" class="form-control" name="price" id="title" placeholder="Price" value="<?php echo $price;?>">
+                      </div>
+                  </div> 
+                  <!-- Title -->
+                  <div class="form-group">
+                      <label class="control-label col-lg-4" for="title">Image</label>
+                      <div class="col-lg-8"> 
+        
+                        <input type="file" class="form-control" name="image" id="title">
+                      </div>
+                  </div>       
+                              
+                  <!-- Buttons -->
+                  <div class="col-md-4">
+                  </div>  
+                  <div class="col-md-8">
+                        <button type="submit" class="btn btn-sm btn-primary" name="update">Update</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal" aria-hidden="true">Close</button>
+                  </div>  
+              </form>
+              <!--end form-->
+            </div>
+           
+        </div><!--modal content-->
+    </div><!--modal dialog-->
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
           <!-- Modal -->
           <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
