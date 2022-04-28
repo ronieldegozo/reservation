@@ -98,7 +98,6 @@
 
             <div class="table-responsive">
             <table class="table">
-   
 <thead class="thead-dark">
     <tr>
       <th scope="col">ID</th>
@@ -110,12 +109,12 @@
       <th scope="col">Delete</th>
     </tr>
   </thead>
-  
   <?php
 include('../includes/dbcon.php');
 
     $query=mysqli_query($con,"select * from pmenu")or die(mysqli_error($con));
       while ($row=mysqli_fetch_array($query)){
+
         $id=$row['id'];
         $pname=$row['pname'];
         $pprice=$row['pprice'];
@@ -126,80 +125,28 @@ include('../includes/dbcon.php');
       
                       <tr>
                       <td><?php echo $id;?></td>
-                      <td><img style="height:50px;width:50px" src="<?php echo $row['imgfile'] ?>"></td>
+                      <td><img style="height:50px;width:50px" src="#sad"></td>
                         <td><?php echo $pname;?></td>
                         <td><?php echo $pprice;?></td>
                         <td><?php echo $pdesc;?></td>
-                      </a>
                         <td>
                               <a href="#update" class="btn btn-info" data-target="#edit" data-toggle="modal">
                                 <i class="fa fa-pencil"></i>
                               </a>
                         </td>
-                        <td>
 
-            <form action="">
-            <a href="delete.php?id=<?php echo $id ?>" class="btn btn-danger" >
-                                <i class="fa fa-user"></i>
-                              </a>
-            </form>
-                
+                        <td>
+                        <form action = "delete_product.php" method = "POST">
+                            <input type = "hidden" name = "id" value = "<?php echo $id; ?>">
+                            <button class="btn btn-danger" name = "del">
+                                    <i class="fa fa-user"></i>
+                            </button>
+                        </form>
                         </td>
                       </tr>
-
-
-                      
-
-              <!-- Modal for edit Menu Food-->
-              <div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Edit Menu</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-
-                      <form action="menu_save.php" method="POST"  enctype="multipart/form-data">
-                        <div class="form-group">
-                          <label for="productname">Product Name</label>
-                          <input type="text" name="pname" value="<?php echo $pname;?>" required class="form-control">
-                        </div>
-                        <div class="form-group">
-                          <label for="productprice">Product Price</label>
-                          <input type="number" name="pprice" value="<?php echo $pprice;?>" required class="form-control">
-                        </div>
-                        <div class="form-group">
-                          <label for="productprice">Product Description</label>
-                           <textarea  name="pdesc" class="form-control" required cols="10" rows="5"><?php echo $pdesc;?></textarea>
-                        </div>
-                        <div class="form-group">
-                          <label for="productprice">Product Image</label>
-                          <input type="file" name="file"  required class="form-control">
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                      <button type="submit"   name="create" class="btn btn-primary">Save changes</button>
-                    </div>
-                    </form>
-                  </div>
-                </div>
-              </div>  
-
-
-
-
-
-
-
-
-
-
-
-                      <?php }?>
+                      <?php 
+                    }
+                    ?>
 </table>
             </div>
 
