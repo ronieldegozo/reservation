@@ -110,6 +110,7 @@
       <th scope="col">Delete</th>
     </tr>
   </thead>
+  
   <?php
 include('../includes/dbcon.php');
 
@@ -136,11 +137,68 @@ include('../includes/dbcon.php');
                               </a>
                         </td>
                         <td>
-                        <a href="delete.php?id=<?php $id ?>" class="btn btn-danger" >
+
+            <form action="">
+            <a href="delete.php?id=<?php echo $id ?>" class="btn btn-danger" >
                                 <i class="fa fa-user"></i>
                               </a>
+            </form>
+                
                         </td>
                       </tr>
+
+
+                      
+
+              <!-- Modal for edit Menu Food-->
+              <div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Edit Menu</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+
+                      <form action="menu_save.php" method="POST"  enctype="multipart/form-data">
+                        <div class="form-group">
+                          <label for="productname">Product Name</label>
+                          <input type="text" name="pname" value="<?php echo $pname;?>" required class="form-control">
+                        </div>
+                        <div class="form-group">
+                          <label for="productprice">Product Price</label>
+                          <input type="number" name="pprice" value="<?php echo $pprice;?>" required class="form-control">
+                        </div>
+                        <div class="form-group">
+                          <label for="productprice">Product Description</label>
+                           <textarea  name="pdesc" class="form-control" required cols="10" rows="5"><?php echo $pdesc;?></textarea>
+                        </div>
+                        <div class="form-group">
+                          <label for="productprice">Product Image</label>
+                          <input type="file" name="file"  required class="form-control">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="submit"   name="create" class="btn btn-primary">Save changes</button>
+                    </div>
+                    </form>
+                  </div>
+                </div>
+              </div>  
+
+
+
+
+
+
+
+
+
+
+
                       <?php }?>
 </table>
             </div>
